@@ -3,65 +3,31 @@ title: IconButton
 ---
 
 import { Preview } from '@components/Preview';
-import { IconButton } from '@florexlabs/ui';
+import { Button } from '@florexlabs/ui';
 
 <Preview client:load>
-  <IconButton icon={<span>⚙️</span>} aria-label="Settings" variant="ghost" />
-  <IconButton icon={<span>✏️</span>} aria-label="Edit" variant="secondary" />
-  <IconButton icon={<span>❤️</span>} aria-label="Like" variant="primary" />
+  <Button variant="ghost" size="sm" aria-label="Settings">⚙️</Button>
+  <Button variant="secondary" size="sm" aria-label="Edit">✏️</Button>
+  <Button variant="primary" size="sm" aria-label="Like">❤️</Button>
 </Preview>
 
 > **[View in Storybook →](https://florextech.github.io/florex-ui/?path=/story/components-icon-button)** — Interactive preview with controls
 
 # IconButton
 
-A square button designed for a single icon, with required `aria-label`.
+Used to render an icon-only button.
 
 ## Import
 
 ```tsx
-import { IconButton } from '@florex/ui';
-```
-
-## Usage
-
-```tsx
-import { Gear } from '@phosphor-icons/react';
-
-<IconButton icon={<Gear size={18} />} aria-label="Settings" />
+import { IconButton } from "@florexlabs/ui";
 ```
 
 ## Props
 
 | Prop | Type | Default | Description |
-|------|------|---------|-------------|
-| icon | `ReactNode` | — | Icon element (required) |
-| aria-label | `string` | — | Accessible label (required) |
-| variant | `'primary' \| 'secondary' \| 'ghost'` | `'ghost'` | Visual style |
-| size | `'sm' \| 'md' \| 'lg'` | `'md'` | Button size |
-| disabled | `boolean` | `false` | Disables the button |
-| className | `string` | — | Additional CSS classes |
-
-Also accepts all native `<button>` HTML attributes.
-
-## Examples
-
-### Variants
-
-```tsx
-import { Heart, Trash, PencilSimple } from '@phosphor-icons/react';
-
-<IconButton icon={<Heart size={18} />} aria-label="Like" variant="primary" />
-<IconButton icon={<PencilSimple size={18} />} aria-label="Edit" variant="secondary" />
-<IconButton icon={<Trash size={18} />} aria-label="Delete" variant="ghost" />
-```
-
-### Sizes
-
-```tsx
-import { Bell } from '@phosphor-icons/react';
-
-<IconButton icon={<Bell size={14} />} aria-label="Notifications" size="sm" />
-<IconButton icon={<Bell size={18} />} aria-label="Notifications" size="md" />
-<IconButton icon={<Bell size={22} />} aria-label="Notifications" size="lg" />
-```
+|---|---|---|---|
+| `icon` | `ReactNode` | — | Icon element |
+| `aria-label` | `string` | **required** | Accessible label |
+| `variant` | `"primary" \| "secondary" \| "ghost"` | `"ghost"` | Visual style |
+| `size` | `"sm" \| "md" \| "lg"` | `"md"` | Button size |

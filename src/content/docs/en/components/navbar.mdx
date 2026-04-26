@@ -5,12 +5,6 @@ title: Navbar
 import { Preview } from '@components/Preview';
 import { Navbar } from '@florexlabs/ui';
 
-<Preview client:load>
-  <Navbar logo={<span style={{fontWeight:'bold'}}>MyApp</span>}>
-    <a href="#">Docs</a>
-    <a href="#">Pricing</a>
-  </Navbar>
-</Preview>
 
 > **[View in Storybook →](https://florextech.github.io/florex-ui/?path=/story/components-navbar)** — Interactive preview with controls
 
@@ -27,7 +21,7 @@ import { Navbar } from '@florex/ui';
 ## Usage
 
 ```tsx
-<Navbar logo={<span className="font-bold">MyApp</span>}>
+<Navbar >
   <a href="/docs">Docs</a>
   <a href="/pricing">Pricing</a>
 </Navbar>
@@ -52,7 +46,7 @@ Also accepts all native `<header>` HTML attributes.
 import { GithubLogo } from '@phosphor-icons/react';
 
 <Navbar
-  logo={<span className="text-lg font-bold">Florex</span>}
+  
   actions={
     <Stack direction="row" gap="sm">
       <IconButton icon={<GithubLogo size={18} />} aria-label="GitHub" />
