@@ -1,0 +1,21 @@
+:root {
+  --sl-color-accent-low: #1a2e1a;
+  --sl-color-accent: #bdf146;
+  --sl-color-accent-high: #d7ff6d;
+  --sl-color-white: #edf6ee;
+  --sl-color-gray-1: #edf6ee;
+  --sl-color-gray-2: #b8c4ba;
+  --sl-color-gray-3: #6b7c6e;
+  --sl-color-gray-4: #263028;
+  --sl-color-gray-5: #171c19;
+  --sl-color-gray-6: #111513;
+  --sl-color-black: #0b0d0c;
+  --sl-font: "Poppins", ui-sans-serif, system-ui, sans-serif;
+  --sl-font-system-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+[data-theme="light"] {
+  --sl-color-bg-nav: #0b0d0c;
+  --sl-color-bg-sidebar: #111513;
+  --sl-color-bg: #0b0d0c;
+}

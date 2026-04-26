@@ -1,0 +1,39 @@
+---
+title: Getting Started
+description: Install and set up @florexlabs/ui
+---
+
+## Install
+
+```bash
+pnpm add @florexlabs/ui
+pnpm add react react-dom tailwindcss
+pnpm add @phosphor-icons/react  # optional
+```
+
+## Setup
+
+Import the CSS tokens in your app entry:
+
+```css
+@import "tailwindcss";
+@import "@florexlabs/ui/florex.css";
+```
+
+## Quick Start
+
+```tsx
+import { Button, Card, Badge } from "@florexlabs/ui";
+
+<Card variant="hover">
+  <Button variant="primary">Save</Button>
+  <Badge tone="brand">New</Badge>
+</Card>
+```
+
+## Links
+
+- [npm](https://www.npmjs.com/package/@florexlabs/ui)
+- [GitHub](https://github.com/florextech/florex-ui)
+- [Storybook](https://florextech.github.io/florex-ui/)
+- [MCP Server](https://www.npmjs.com/package/@florexlabs/ui-mcp)
