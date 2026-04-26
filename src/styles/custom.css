@@ -12,10 +12,25 @@
   --sl-color-black: #0b0d0c;
   --sl-font: "Poppins", ui-sans-serif, system-ui, sans-serif;
   --sl-font-system-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  /* Florex UI tokens for component previews */
+  --bg: #0b0d0c;
+  --surface: #111513;
+  --surface-muted: #171c19;
+  --foreground: #edf6ee;
+  --muted: #b8c4ba;
+  --border: #263028;
+  --brand-900: #f4ffe9;
+  --brand-700: #d7ff6d;
+  --brand-600: #bdf146;
+  --brand-500: #9ddf4b;
+  --brand-300: #76b73d;
+  --danger: #ef4444;
+  --warning: #f59e0b;
+  --success: #bdf146;
+  --font-montserrat: "Montserrat", ui-sans-serif, system-ui, sans-serif;
+  --font-poppins: "Poppins", ui-sans-serif, system-ui, sans-serif;
+  --shadow-glow: 0 0 0 1px rgb(189 241 70 / 0.12), 0 22px 48px -32px rgb(157 223 75 / 0.7);
 }
 
-[data-theme="light"] {
-  --sl-color-bg-nav: #0b0d0c;
-  --sl-color-bg-sidebar: #111513;
-  --sl-color-bg: #0b0d0c;
-}
+* { border-color: var(--border); }
