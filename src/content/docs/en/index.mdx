@@ -1,35 +1,102 @@
 ---
 title: Getting Started
-description: Install and set up @florexlabs/ui
 ---
+
+import { Preview } from '@components/Preview';
+import { Button, Badge, Card, CardHeader, CardTitle, CardContent, Alert } from '@florexlabs/ui';
+
+<Preview client:load>
+  <Button variant="primary">Primary</Button>
+  <Button variant="secondary">Secondary</Button>
+  <Badge tone="brand">New</Badge>
+  <Badge tone="success">Live</Badge>
+</Preview>
 
 ## Install
 
 ```bash
 pnpm add @florexlabs/ui
 pnpm add react react-dom tailwindcss
-pnpm add @phosphor-icons/react  # optional
+pnpm add @phosphor-icons/react  # optional, recommended
 ```
 
 ## Setup
 
-Import the CSS tokens in your app entry:
+Add to your main CSS file:
 
 ```css
 @import "tailwindcss";
 @import "@florexlabs/ui/florex.css";
 ```
 
+If using Tailwind v4 with a bundler, add the source scan so Tailwind detects classes inside the library:
+
+```css
+@source "../../node_modules/@florexlabs/ui/dist";
+```
+
 ## Quick Start
 
 ```tsx
-import { Button, Card, Badge } from "@florexlabs/ui";
+import { Button, Card, Badge, Input } from "@florexlabs/ui";
+import { Plus } from "@phosphor-icons/react";
 
-<Card variant="hover">
-  <Button variant="primary">Save</Button>
-  <Badge tone="brand">New</Badge>
-</Card>
+function App() {
+  return (
+    <Card variant="hover">
+      <Input placeholder="Enter your email" />
+      <Button variant="primary">
+        <Plus size={16} weight="bold" /> Subscribe
+      </Button>
+      <Badge tone="brand">New</Badge>
+    </Card>
+  );
+}
 ```
+
+## MCP Server — AI Integration
+
+Let Claude, Cursor, Kiro, and other AI assistants understand and generate code with @florexlabs/ui.
+
+### Claude Desktop
+
+Add to `claude_desktop_config.json`:
+
+```json
+{
+  "mcpServers": {
+    "florex-ui": {
+      "command": "npx",
+      "args": ["-y", "@florexlabs/ui-mcp"]
+    }
+  }
+}
+```
+
+### Cursor / Kiro
+
+Add to `.cursor/mcp.json` or `.kiro/mcp.json`:
+
+```json
+{
+  "mcpServers": {
+    "florex-ui": {
+      "command": "npx",
+      "args": ["-y", "@florexlabs/ui-mcp"]
+    }
+  }
+}
+```
+
+### Available Tools
+
+| Tool | Description |
+|---|---|
+| `list_components` | Browse all 46+ components by category |
+| `get_component_docs` | Get props, examples for any component |
+| `generate_component_code` | Generate code for a use case |
+| `get_design_tokens` | Get all CSS variables and values |
+| `get_setup_instructions` | Installation guide |
 
 ## Links
 
