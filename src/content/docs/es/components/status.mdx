@@ -2,6 +2,18 @@
 title: Status
 ---
 
+import { Preview } from '@components/Preview';
+import { Status } from '@florexlabs/ui';
+
+<Preview client:load>
+  <Status value="success">Active</Status>
+  <Status value="warning">Pending</Status>
+  <Status value="danger">Error</Status>
+  <Status value="neutral">Offline</Status>
+</Preview>
+
+> **[View in Storybook →](https://florextech.github.io/florex-ui/?path=/story/components-status)** — Interactive preview with controls
+
 # Status
 
 A status indicator with a colored dot and label text.

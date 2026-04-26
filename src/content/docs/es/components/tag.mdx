@@ -2,6 +2,17 @@
 title: Tag
 ---
 
+import { Preview } from '@components/Preview';
+import { Tag } from '@florexlabs/ui';
+
+<Preview client:load>
+  <Tag variant="subtle">Subtle</Tag>
+  <Tag variant="solid">Solid</Tag>
+  <Tag onClose={() => {}}>Removable</Tag>
+</Preview>
+
+> **[View in Storybook →](https://florextech.github.io/florex-ui/?path=/story/components-tag)** — Interactive preview with controls
+
 # Tag
 
 A small label with optional close button, useful for filters and selections.

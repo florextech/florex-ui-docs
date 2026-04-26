@@ -2,6 +2,19 @@
 title: Radio
 ---
 
+import { Preview } from '@components/Preview';
+import { RadioGroup, RadioItem } from '@florexlabs/ui';
+
+<Preview client:load>
+  <RadioGroup name="plan" defaultValue="free">
+    <RadioItem value="free" label="Free" />
+    <RadioItem value="pro" label="Pro" />
+    <RadioItem value="enterprise" label="Enterprise" />
+  </RadioGroup>
+</Preview>
+
+> **[View in Storybook →](https://florextech.github.io/florex-ui/?path=/story/components-radio)** — Interactive preview with controls
+
 # Radio
 
 A radio group with individual radio items for single-selection.

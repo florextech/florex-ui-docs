@@ -2,6 +2,22 @@
 title: Select
 ---
 
+import { Preview } from '@components/Preview';
+import { Select } from '@florexlabs/ui';
+
+<Preview client:load>
+  <div style={{width:'100%',maxWidth:'280px'}}>
+    <Select
+      options={[
+        { value: 'react', label: 'React' },
+        { value: 'vue', label: 'Vue' },
+        { value: 'svelte', label: 'Svelte' },
+      ]}
+      placeholder="Choose a framework"
+    />
+  </div>
+</Preview>
+
 > **[View in Storybook →](https://florextech.github.io/florex-ui/?path=/story/components-select)** — Interactive preview with controls
 
 # Select

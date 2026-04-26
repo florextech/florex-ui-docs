@@ -2,6 +2,19 @@
 title: Stack
 ---
 
+import { Preview } from '@components/Preview';
+import { Stack } from '@florexlabs/ui';
+
+<Preview client:load>
+  <Stack direction="row" gap="md">
+    <div style={{padding:'0.5rem 1rem',background:'#1a2e1a',borderRadius:'0.375rem',color:'#b8c4ba'}}>Item 1</div>
+    <div style={{padding:'0.5rem 1rem',background:'#1a2e1a',borderRadius:'0.375rem',color:'#b8c4ba'}}>Item 2</div>
+    <div style={{padding:'0.5rem 1rem',background:'#1a2e1a',borderRadius:'0.375rem',color:'#b8c4ba'}}>Item 3</div>
+  </Stack>
+</Preview>
+
+> **[View in Storybook →](https://florextech.github.io/florex-ui/?path=/story/components-stack)** — Interactive preview with controls
+
 # Stack
 
 A flex layout utility for vertical or horizontal stacking with consistent gaps.

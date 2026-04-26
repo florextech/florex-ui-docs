@@ -2,6 +2,16 @@
 title: VisuallyHidden
 ---
 
+import { Preview } from '@components/Preview';
+import { VisuallyHidden } from '@florexlabs/ui';
+
+<Preview client:load>
+  <p>This button has a <strong>visually hidden</strong> label for screen readers:</p>
+  <button>❤️ <VisuallyHidden>Add to favorites</VisuallyHidden></button>
+</Preview>
+
+> **[View in Storybook →](https://florextech.github.io/florex-ui/?path=/story/components-visually-hidden)** — Interactive preview with controls
+
 # VisuallyHidden
 
 Hides content visually while keeping it accessible to screen readers.

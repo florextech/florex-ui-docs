@@ -1,3 +1,7 @@
+@import "tailwindcss";
+
+@source "../../node_modules/@florexlabs/ui/dist";
+
 :root {
   --sl-color-accent-low: #1a2e1a;
   --sl-color-accent: #bdf146;
@@ -11,9 +15,7 @@
   --sl-color-gray-6: #111513;
   --sl-color-black: #0b0d0c;
   --sl-font: "Poppins", ui-sans-serif, system-ui, sans-serif;
-  --sl-font-system-mono: "JetBrains Mono", ui-monospace, monospace;
 
-  /* Florex UI tokens for component previews */
   --bg: #0b0d0c;
   --surface: #111513;
   --surface-muted: #171c19;
@@ -28,9 +30,15 @@
   --danger: #ef4444;
   --warning: #f59e0b;
   --success: #bdf146;
+  --shadow-glow: 0 0 0 1px rgb(189 241 70 / 0.12), 0 22px 48px -32px rgb(157 223 75 / 0.7);
+  --shadow-card: 0 1px 3px rgb(0 0 0 / 0.3);
   --font-montserrat: "Montserrat", ui-sans-serif, system-ui, sans-serif;
   --font-poppins: "Poppins", ui-sans-serif, system-ui, sans-serif;
-  --shadow-glow: 0 0 0 1px rgb(189 241 70 / 0.12), 0 22px 48px -32px rgb(157 223 75 / 0.7);
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+  --radius-full: 9999px;
 }
 
 * { border-color: var(--border); }

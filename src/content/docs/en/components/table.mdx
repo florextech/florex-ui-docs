@@ -2,6 +2,30 @@
 title: Table
 ---
 
+import { Preview } from '@components/Preview';
+import { Table, TableHeader, TableBody, TableRow, TableHead, TableCell } from '@florexlabs/ui';
+
+<Preview client:load>
+  <Table>
+    <TableHeader>
+      <TableRow>
+        <TableHead>Name</TableHead>
+        <TableHead>Role</TableHead>
+      </TableRow>
+    </TableHeader>
+    <TableBody>
+      <TableRow>
+        <TableCell>Ana García</TableCell>
+        <TableCell>Admin</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableCell>John Doe</TableCell>
+        <TableCell>Editor</TableCell>
+      </TableRow>
+    </TableBody>
+  </Table>
+</Preview>
+
 > **[View in Storybook →](https://florextech.github.io/florex-ui/?path=/story/components-table)** — Interactive preview with controls
 
 # Table

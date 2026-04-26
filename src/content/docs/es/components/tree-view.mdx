@@ -2,6 +2,23 @@
 title: TreeView
 ---
 
+import { Preview } from '@components/Preview';
+import { TreeView, TreeNode } from '@florexlabs/ui';
+
+<Preview client:load>
+  <TreeView>
+    <TreeNode label="src" defaultOpen>
+      <TreeNode label="components">
+        <TreeNode label="Button.tsx" />
+        <TreeNode label="Card.tsx" />
+      </TreeNode>
+      <TreeNode label="index.ts" />
+    </TreeNode>
+  </TreeView>
+</Preview>
+
+> **[View in Storybook →](https://florextech.github.io/florex-ui/?path=/story/components-tree-view)** — Interactive preview with controls
+
 # TreeView
 
 A collapsible tree structure built on native `<details>` elements.

@@ -2,6 +2,16 @@
 title: Navbar
 ---
 
+import { Preview } from '@components/Preview';
+import { Navbar } from '@florexlabs/ui';
+
+<Preview client:load>
+  <Navbar logo={<span style={{fontWeight:'bold'}}>MyApp</span>}>
+    <a href="#">Docs</a>
+    <a href="#">Pricing</a>
+  </Navbar>
+</Preview>
+
 > **[View in Storybook →](https://florextech.github.io/florex-ui/?path=/story/components-navbar)** — Interactive preview with controls
 
 # Navbar

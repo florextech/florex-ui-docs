@@ -2,6 +2,16 @@
 title: Modal
 ---
 
+import { Preview } from '@components/Preview';
+import { Modal } from '@florexlabs/ui';
+
+<Preview client:load>
+  <Modal open={false} onClose={() => {}}>
+    <h2>Confirm Action</h2>
+    <p>Are you sure you want to proceed?</p>
+  </Modal>
+</Preview>
+
 > **[View in Storybook →](https://florextech.github.io/florex-ui/?path=/story/components-modal)** — Interactive preview with controls
 
 # Modal

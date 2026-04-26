@@ -2,6 +2,17 @@
 title: Popover
 ---
 
+import { Preview } from '@components/Preview';
+import { Popover, Button } from '@florexlabs/ui';
+
+<Preview client:load>
+  <Popover trigger={<Button variant="secondary">Click me</Button>}>
+    <p>This is the popover content.</p>
+  </Popover>
+</Preview>
+
+> **[View in Storybook →](https://florextech.github.io/florex-ui/?path=/story/components-popover)** — Interactive preview with controls
+
 # Popover
 
 A floating panel that appears on click, positioned below the trigger.

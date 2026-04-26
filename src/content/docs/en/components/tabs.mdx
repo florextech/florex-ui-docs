@@ -2,6 +2,20 @@
 title: Tabs
 ---
 
+import { Preview } from '@components/Preview';
+import { Tabs, TabsList, TabsTrigger, TabsContent } from '@florexlabs/ui';
+
+<Preview client:load>
+  <Tabs defaultValue="tab1">
+    <TabsList>
+      <TabsTrigger value="tab1">Overview</TabsTrigger>
+      <TabsTrigger value="tab2">Settings</TabsTrigger>
+    </TabsList>
+    <TabsContent value="tab1">Overview content here.</TabsContent>
+    <TabsContent value="tab2">Settings content here.</TabsContent>
+  </Tabs>
+</Preview>
+
 > **[View in Storybook →](https://florextech.github.io/florex-ui/?path=/story/components-tabs)** — Interactive preview with controls
 
 # Tabs

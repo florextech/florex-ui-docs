@@ -2,6 +2,17 @@
 title: Steps
 ---
 
+import { Preview } from '@components/Preview';
+import { Steps, Step } from '@florexlabs/ui';
+
+<Preview client:load>
+  <Steps current={1}>
+    <Step title="Account" />
+    <Step title="Profile" />
+    <Step title="Review" />
+  </Steps>
+</Preview>
+
 > **[View in Storybook →](https://florextech.github.io/florex-ui/?path=/story/components-steps)** — Interactive preview with controls
 
 # Steps

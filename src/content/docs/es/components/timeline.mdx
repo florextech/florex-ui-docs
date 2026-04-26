@@ -2,6 +2,19 @@
 title: Timeline
 ---
 
+import { Preview } from '@components/Preview';
+import { Timeline, TimelineItem } from '@florexlabs/ui';
+
+<Preview client:load>
+  <Timeline>
+    <TimelineItem title="Order placed">Your order has been confirmed.</TimelineItem>
+    <TimelineItem title="Shipped">Package is on its way.</TimelineItem>
+    <TimelineItem title="Delivered">Package delivered.</TimelineItem>
+  </Timeline>
+</Preview>
+
+> **[View in Storybook →](https://florextech.github.io/florex-ui/?path=/story/components-timeline)** — Interactive preview with controls
+
 # Timeline
 
 A vertical timeline for displaying chronological events.

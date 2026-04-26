@@ -2,6 +2,15 @@
 title: Drawer
 ---
 
+import { Preview } from '@components/Preview';
+import { Drawer } from '@florexlabs/ui';
+
+<Preview client:load>
+  <Drawer open={false} onClose={() => {}}>
+    <p>Drawer content here.</p>
+  </Drawer>
+</Preview>
+
 > **[View in Storybook →](https://florextech.github.io/florex-ui/?path=/story/components-drawer)** — Interactive preview with controls
 
 # Drawer

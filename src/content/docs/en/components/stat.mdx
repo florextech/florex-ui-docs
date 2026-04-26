@@ -2,6 +2,14 @@
 title: Stat
 ---
 
+import { Preview } from '@components/Preview';
+import { Stat } from '@florexlabs/ui';
+
+<Preview client:load>
+  <Stat label="Revenue" value="$12,450" trend="up" helpText="+12% from last month" />
+  <Stat label="Users" value="1,024" trend="neutral" helpText="No change" />
+</Preview>
+
 > **[View in Storybook →](https://florextech.github.io/florex-ui/?path=/story/components-stat)** — Interactive preview with controls
 
 # Stat

@@ -2,6 +2,24 @@
 title: Accordion
 ---
 
+import { Preview } from '@components/Preview';
+import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from '@florexlabs/ui';
+
+<Preview client:load>
+  <Accordion>
+    <AccordionItem>
+      <AccordionTrigger>Is it accessible?</AccordionTrigger>
+      <AccordionContent>Yes, it uses native HTML details/summary elements.</AccordionContent>
+    </AccordionItem>
+    <AccordionItem>
+      <AccordionTrigger>Is it customizable?</AccordionTrigger>
+      <AccordionContent>Yes, all components accept className for full Tailwind customization.</AccordionContent>
+    </AccordionItem>
+  </Accordion>
+</Preview>
+
+> **[View in Storybook →](https://florextech.github.io/florex-ui/?path=/story/components-accordion)** — Interactive preview with controls
+
 # Accordion
 
 A collapsible content panel built on native `<details>` elements.
