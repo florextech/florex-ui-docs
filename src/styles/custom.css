@@ -3,6 +3,7 @@
 @source "../../node_modules/@florexlabs/ui/dist";
 
 :root {
+  color-scheme: dark;
   --sl-color-accent-low: #1a2e1a;
   --sl-color-accent: #bdf146;
   --sl-color-accent-high: #d7ff6d;
@@ -42,3 +43,31 @@
 }
 
 * { border-color: var(--border); }
+
+:root[data-theme="light"] {
+  color-scheme: dark;
+}
+
+:root[data-theme="light"],
+:root[data-theme="light"] .sl-content {
+  --sl-color-accent-low: #1a2e1a;
+  --sl-color-accent: #bdf146;
+  --sl-color-accent-high: #d7ff6d;
+  --sl-color-white: #edf6ee;
+  --sl-color-gray-1: #edf6ee;
+  --sl-color-gray-2: #b8c4ba;
+  --sl-color-gray-3: #6b7c6e;
+  --sl-color-gray-4: #263028;
+  --sl-color-gray-5: #171c19;
+  --sl-color-gray-6: #111513;
+  --sl-color-black: #0b0d0c;
+  --sl-color-bg: var(--sl-color-black);
+  --sl-color-bg-sidebar: var(--sl-color-black);
+  --sl-color-bg-nav: var(--sl-color-black);
+  --sl-color-text: var(--sl-color-white);
+  --sl-color-text-accent: var(--sl-color-accent);
+}
+
+starlight-theme-select {
+  display: none;
+}

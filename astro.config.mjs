@@ -8,6 +8,8 @@ export default defineConfig({
   vite: { plugins: [tailwindcss()] },
   integrations: [starlight({
     title: "@florexlabs/ui",
+    disable404Route: false,
+    expressiveCode: { themes: ["github-dark"] },
     social: [
       { icon: "github", label: "GitHub", href: "https://github.com/florextech/florex-ui" },
     ],
