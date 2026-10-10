@@ -26,6 +26,25 @@ import { Input } from "@florexlabs/ui";
 | Prop | Type | Default | Description |
 |---|---|---|---|
 | `placeholder` | `string` | — | Placeholder text |
-| `type` | `string` | `"text"` | Input type |
+| `type` | `string` | `"text"` | Native input type, including `date`, `time`, and `datetime-local` |
 | `disabled` | `boolean` | `false` | Disabled state |
 | `className` | `string` | — | Additional classes |
+
+## Fecha y hora
+
+Usa selectores nativos para trabajo programado. Florex UI conserva el tema oscuro, la tipografía, el foco y el disparador de calendario, mientras el navegador mantiene su selector local accesible.
+
+<Preview client:load>
+  <div style={{ width: "100%", maxWidth: "320px", display: "flex", flexDirection: "column", gap: "0.5rem" }}>
+    <Label htmlFor="publish-at">Publicar a las</Label>
+    <Input id="publish-at" type="datetime-local" defaultValue="2026-10-10T09:30" />
+    <small>Elige la hora local de publicación.</small>
+  </div>
+</Preview>
+
+```tsx
+<Label htmlFor="publish-at">Publicar a las</Label>
+<Input id="publish-at" type="datetime-local" min="2026-10-10T09:00" />
+```
+
+`datetime-local` no contiene una zona horaria. Guarda la zona por separado cuando la programación corresponda a otra región.
